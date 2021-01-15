@@ -1,0 +1,412 @@
+/* Importação de fontes usadas no website, disponiveis online */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Importação de fonte local, usada no título do jogo */
+
+@font-face{
+    font-family: "Bugfast";
+    src: url("STRUGGLEFORSPEED/Bugfast") format("otf");
+    font-weight: normal;
+    font-size: normal;
+}
+
+/* Estilo da estrutura geral */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fundo das páginas todas */
+
+body {
+    font-family: Arial;
+    padding: 0.5em;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-image: url("Images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Video de fundo na página "Sobre" */
+
+.speed1 {
+  object-fit: cover;
+  size: initial;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+
+/* Barra de navegação topo*/
+
+
+.nav li {
+    display: inline;
+ 
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.main-nav {
+    color: white;
+}
+
+.main-nav li {
+    padding: 0;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    transition: transform .2s; /* Tempo da animação */
+    transition: ease-in-out 0.3s;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+
+
+/* Hover = Passar com o rato por cima -> Animação */
+
+.nav a:hover {
+    transform: scale(1.5);  /* transform -> neste caso, ao passar por cima, existe uma animação de zoom */
+}
+
+
+/*STRUGGLE FOR SPEED - Título */
+
+.game-name{
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    font-family: "Bugfast";
+    font-weight: normal;
+    color: white;
+    text-shadow:10px 10px 15px black;
+}
+
+.game-name-large{
+    font-size: calc(2.525rem + 3.3vw);
+}
+
+/* Parágrafo história do jogo*/
+
+.historia {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    text-shadow:10px 10px 15px black;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Frases abaixo da "história" do jogo */
+
+.street1 {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow:10px 10px 20px black;
+}
+
+.street2 {
+    text-align: center;
+    font-size: 1.55em;
+    text-shadow:10px 10px 20px black;
+}
+
+/* Todos os titulos (Sobre o jogo, Equipa, Contacta-nos, Requisitos) */
+
+.titulos {
+    font-family: "Bebas Neue";
+    font-size: 3.75em;
+    text-align: center;
+    text-shadow:15px 15px 20px black;
+}
+
+
+.requisitos-para-jogar {
+    margin: 1em;
+    text-shadow:5px 5px 25px black;
+}
+
+/* Lista dos requisitos */
+
+.requisitos {
+    list-style: none;
+    margin: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow:10px 10px 15px black;
+}
+
+/* Rodapé das páginas */
+
+.footer {
+    text-shadow:2px 2px 15px black;
+    color: white;
+    text-align: center;
+    clear: left;
+}
+
+/* Formulário */
+
+.forms {
+ text-align: center;
+ font-size: 1.5em;
+ color: black;
+
+}
+
+.msg {
+    width:200px; 
+    height:600px;
+    color: black;
+}
+
+/* Campos do formulário */
+
+
+input {
+    width: 350px;
+    padding: 5px;
+    height: auto;
+}
+
+/* Tamanhos da letra dos campos do formulário e estilo da caixa de texto */
+
+.text {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+
+.msg {
+    width: 350px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+    color: black;
+}
+
+/* Texto por cima dos campos do formulário */
+
+.text-box-titles {
+    text-shadow: black 5px 5px 10px;
+    font-size: 1.15em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Botão do formulário */
+
+.btn {
+   color: black;
+   box-shadow: black 10px 10px 20px;
+   width: 200px;
+   height: 50px;
+   font-size: 1.15em;
+   font-family: 'Montserrat', sans-serif;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.btn:hover {
+    color: rgba(0, 0, 0, 0.295);
+}
+
+/* Nomes da equipa em lista */
+
+.equipa-lista {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Botão de Download */
+
+.download {
+    color: black;
+    box-shadow: black 10px 10px 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.15em;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    display: inline;
+    cursor: pointer;
+
+}
+
+.download a {
+    display: inline-block;
+}
+
+/* Animação botão de download (alteração de cor e zoom) */
+
+.download:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Classe usada para centrar conteúdo (usar <div>) */
+
+.wrapper {
+    text-align: center;
+}
+
+/* Linha abaixo do texto que identifica a página em que nos encontramos */
+
+.nav ul li a.active-page {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+
+}
+
+/* Propriedade que faz com que a navbar, a partir de ecrãs com 700px, tenha uma margem de 10px */
+
+@media screen and (max-width: 700px) {
+    .nav a {
+      margin:10px;
+    }
+
+}
+
+/* Galeria */
+
+.row {
+    display: inline;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.img {
+    cursor: pointer;
+    height: auto;
+    width: 450px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 35px;
+    border: 3px white;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {
+    transform: scale(1.15);
+    box-shadow: 10px 10px 20px black;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+  }
+  
+  
+  .modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 50%;
+    }
+  }
+
+/* Possíveis transições para as páginas */

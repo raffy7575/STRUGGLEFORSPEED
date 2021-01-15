@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>Struggle for Speed | Galeria</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Pages.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição">
+</head>
+
+<body class="body animate__animated animate__zoomIn">
+    
+    
+<!-- Navegação topo -->
+    <header>
+        <div class="wrapper">
+        <nav class="nav main-nav zoom">
+            <ul>
+                <li><a href="About.html">SOBRE</a></li>
+                <li><a href="Equipa.html">EQUIPA</a></li>
+                <li><a href="Galeria.html" class="active-page">GALERIA</a></li>
+                <li><a href="Contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+        <h1 class="game-name game-name-large">STRUGGLE FOR SPEED</h1>
+    </header>
+
+    <p class="titulos">IMAGENS DO JOGO</p>
+
+    <!-- Galeria-->
+
+    <img id="myImg" class="myImg" src="Images/image2.jpg" alt="img02" style="width:100%; max-width:400px">
+
+    <img id="myImg" class="myImg" src="Images/image3.jpg" alt="img03" style="width:100%; max-width:400px">
+
+    <img id="myImg" class="myImg" src="Images/image4.jpg" alt="img04" style="width:100%; max-width:400px">
+
+    <img id="myImg" class="myImg" src="Images/image5.jpg" alt="img05" style="width:100%; max-width:400px">
+
+        <div class="row wrapper">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img02"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Javascript para o zoom nas imagens funcionar-->
+
+            <script>
+                // create references to the modal...
+            var modal = document.getElementById('myModal');
+                // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImg');
+                // the image in the modal
+            var modalImg = document.getElementById("img02");
+
+                // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+                // and attach our click listener for this image.
+            img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            </script>
+
+
+
+    <!-- Rodapé-->
+
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <p><i>Copyright Struggle For Speed Team 2020. All rights reserved.</i></p>
+    </footer>
+</body>
+</html>
